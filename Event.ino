@@ -1,20 +1,13 @@
+#include <WiFiNINA.h>
+#include <WiFiSSLClient.h>
+#include <Wire.h>
+#include <BH1750.h>
 #include <IFTTTMaker.h>
 
-/*******************************************************************
- *  Trigger event at end of the setup                              *
- *                                                                 *
- *  adapted by Brian Lough                                         *
- *******************************************************************/
-
-
-#include <WiFiSSLClient.h>
-#include <WiFi101.h>
-
-//------- Replace the following! ------
-char ssid[] = "xxx";       // your network SSID (name)
-char password[] = "yyyy";  // your network key
-#define KEY "zzzzzzzzzzzzzzzzzzzzzzz"  // Get it from this page https://ifttt.com/services/maker/settings
-#define EVENT_NAME "device_on" // Name of your event name, set when you are creating the applet
+char ssid[] = "Prerit's Pixel 7 Pro";       
+char password[] = "Prerit123";  
+#define KEY "gJ_G5ib4jvxmQDljur-X_Jrhq0UYNEYkJ9SkPpo_j3s"  
+#define EVENT_NAME "sunlight_on" 
 
 
 
